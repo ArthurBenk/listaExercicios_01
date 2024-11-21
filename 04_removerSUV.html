@@ -1,30 +1,23 @@
 <meta charset="UTF-8" />
 <script>
     /*
-    PROBLEMA: ITENS DA LISTA DE COMPRAS
-    Peça para o usuário inserir 3 frutas para a lista de compras. (Use 3 vezes o prompt).
-    Peça também para o usuário inserir 3 bebidas para a lista de compras (Use outras 3 vezes o prompt).
-    Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma:
-    As frutas a serem compradas são: fruta1, fruta2, fruta3.
-    As bebidas a serem compradas são: bebida1, bebida2, bebida3.
-    A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
+    PROBLEMA: REMOVER SUV
+    Crie o seguinte array:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    Pergunte ao usuário qual carro deseja REMOVER da lista.
+    Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
     */
 
     //ENTRADA
-    const primeiraFruta = prompt("Insira a 1ª fruta:");
-    const segundaFruta = prompt("Insira a 2ª fruta:");
-    const terceiraFruta = prompt("Insira a 3ª fruta:");
+    let carrosSUV1 = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSUV2 = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remover = prompt(`Analisando os seguintes carros: ${carrosSUV.join(", ")}. Qual você deseja remover da lista?`)
+    let procurar = carrosSUV.indexOf(remover);
+    let removido = carrosSUV.splice(procurar, 1);
 
-    const primeiraBebida = prompt("Insira a 1ª bebida:");
-    const segundaBebida = prompt("Insira a 2ª bebida:");
-    const terceiraBebida = prompt("Insira a 3ª bebida:");
     //PROCESSAMENTO
-    let frutas = [primeiraFruta, segundaFruta, terceiraFruta];
-    let bebidas = [primeiraBebida, segundaBebida, terceiraBebida];
-    let compras = [frutas.join(", "), bebidas.join(", ")];
-
-    document.write(`Frutas a serem compradas: ${frutas.join(", ")} <br> Bebidas a serem compradas: ${bebidas.join(", ")} <br> Lista de compras completa: ${compras.join(", ")}`);
-
+   
     //SAÍDA
+    document.write(`A antiga lista é :${carrosSUV1.join(", ")}<br>Lista atualizada: ${carrosSUV2.join(", ")}`);
 
 </script>
