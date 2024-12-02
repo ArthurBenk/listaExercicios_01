@@ -1,6 +1,5 @@
 <meta charset="UTF-8" />
 <script>
-<meta charset="UTF-8" />
     /*
     PROBLEMA: ADICIONAR SUV
     Crie os seguintes arrays:
@@ -8,7 +7,10 @@
     Pergunte ao usuário qual carro deseja ADICIONAR na lista.
     Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
     */
-
-    //ENTRADA
-
-</script>
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosPos = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    alert(`está é a lista atual de carros ${carrosSUV}`)
+    const resposta = (prompt("qual carro deseja adicionar a lista?"))
+    let empurrar = carrosPos.push(resposta)
+    document.write(`está é a lista antiga: ${carrosSUV} <br> está é a lista nova: ${carrosPos}`)
+</script>   

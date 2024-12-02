@@ -12,7 +12,21 @@
     */
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    //PROCESSAMENTO
+    let carroAdd1 = prompt("qual carro você deseja adicionar a lista?").toLowerCase()
+    let carroAdd2 = prompt("qual outro carro você deseja adicionar a lista?").toLowerCase()
+    let carroAdd3 = prompt("adicione mais um carro você deseja a lista?").toLowerCase()
+    let arra = [carroAdd1,carroAdd2,carroAdd3] 
+    let classe = prompt(`em qual destas listas os carros se enquadra SUV, Sedan ou Hatch`).toLowerCase()
 
+    if (classe =="suv") {let empurrar = carrosSUV.push(arra)} 
+    else if (classe =="sedan"){let empurrar = carrosSedan.push(arra)} 
+    else if (classe =="hatch"){let empurrar = carrosHatch.push(arra)} 
+    else {let empurrar = "algo deu errado"}
     //SAÍDA
+    document.write(`carros SUV:${carrosSUV} <br>carros Sedan:${carrosSedan} <br>carros Hatch:${carrosHatch}`)
     
 </script>
